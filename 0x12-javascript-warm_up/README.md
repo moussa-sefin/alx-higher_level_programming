@@ -1,1 +1,1 @@
-0x12-javascript-warm_up
+Warming up for JavaScript projects
