@@ -1,5 +1,11 @@
 #!/usr/bin/node
 
+const myObjecti = {
+  type: 'object',
+  value: 12
+};
+console.log(myObjecti);
+
 const myObject = {
   type: 'object',
   value: 12,
