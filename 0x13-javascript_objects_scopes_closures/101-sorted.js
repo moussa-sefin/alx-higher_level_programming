@@ -3,11 +3,14 @@
 // and computes a dictionary of user ids by occurrence.
 
 const { dict } = require('./101-data.js');
-const Dictn = {};
-for (const N in dict) {
-  if (Dictn[dict[N]] === undefined) {
-    Dictn[dict[N]] = [];
+
+const dictByOccurrence = {};
+for (const userId in dict) {
+  const occurrence = dict[userId];
+  if (!dictByOccurrence[occurrence]) {
+    dictByOccurrence[occurrence] = [];
   }
-  Dictn[dict[N]].push(N);
+  dictByOccurrence[occurrence].push(userId);
 }
-console.log(Dictn);
+
+console.log(dictByOccurrence);
