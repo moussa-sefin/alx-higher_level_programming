@@ -12,7 +12,6 @@ const Square = class Square extends Square_ {
           prints = prints + c;
         }
         console.log(prints);
-        prints = '';
       }
     } else {
       super.print();
